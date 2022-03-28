@@ -17,7 +17,7 @@ def fundo_knri11():
     soup = BeautifulSoup(html_cotacao, "html.parser")
     cotacao = soup.find("span", class_="value")
     cotacao_final = cotacao.string
-    #print(cotacao_final)
+    print(cotacao_final)
     #fundo_knri11()
     cotacao_knri11["text"] = cotacao_final
 
